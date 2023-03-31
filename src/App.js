@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ClassCounter from './components/ClassCounter';
+import HookCounter from './components/HookCounter';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       
       <ClassCounter />
 
+      <HookCounter />
 
     </div>
   );
