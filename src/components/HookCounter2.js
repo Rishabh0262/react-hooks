@@ -34,8 +34,8 @@ function HookCounter2() {
 #1                                    we'll pass a 'function' that has access to old-state-value.    
         
         */}
-
-        <button onClick={incrementFive}>Increment 5 </button> : 'using for loop, <b> Now it's working </b> properly'<br/>
+<br/>
+        <button onClick={incrementFive}>Increment 5 </button> : 'using for loop, <b> Now it's working </b> properly'<br/> <br/>
         <button onClick={decrementFive}>Decrement 5 </button> : '<b> without </b> using for loop. <b> direct</b> increment using <b> "setState"</b>  '
         
 
