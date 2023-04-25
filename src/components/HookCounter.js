@@ -7,7 +7,7 @@ function HookCounter() {
         //  returns : <current value> of the 'state-property' & a 'Method' i.e, capable of <'UPDATE'> 'state-property'.
 
     const [count, setCount] = useState(0)    //    -------------------------------    Syntax is Array-destructuring. i.e, a Feature in ES6.
-    //    [<stateName>, <handlerFunctionName()>] = useState(<initial_state_value>)
+    //    [<stateVariableName>, <handlerFunctionName()>] = useState(<initial_state_value>)
 
   return (
     <div>
