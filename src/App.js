@@ -35,14 +35,14 @@ function App() {
           * 
           * Because of stateful - Cannot break component into smaller ones
             
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
 
 
-
-
+************************************************  useState Hook  ********************************************************
             
 
                   // ********** Branches Chronological order ***********
@@ -59,6 +59,7 @@ function App() {
 
 
                 *********** summary *********
+
                 The useState hook let you add state in functional components.
 
                 In classes, state is always an object.
@@ -72,6 +73,22 @@ function App() {
                 If New state value depends on previous state value? you can pass a fucntion to the setter function.
 
                 When dealing with objects or arrays, always make sure to spread state-Variable then call the setter function.
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+************************************************  useEffect Hook  ********************************************************
+
+          the Effect Hook let you perform *side effect* in "functional component".
+
+          It is close replacement of componentDidMount, componentDidUpdate & componentWillUnmount
+
+
+
         */}
 
 
