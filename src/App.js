@@ -37,6 +37,41 @@ function App() {
             
 
 
+
+
+
+
+
+
+            
+
+                  // ********** Branches Chronological order ***********
+          
+                Master
+                useStateHook        +        (useState-with-prev-state)
+                useState-with-object
+                useState4-with-array
+            
+
+
+
+
+
+
+                *********** summary *********
+                The useState hook let you add state in functional components.
+
+                In classes, state is always an object.
+
+                With useState hook, the state doesn't have to be an object
+
+                The useState hook returns an array with 2 elements :
+                * 1st element is current-value of state 
+                * 2nd element is a state-setter fucntion
+
+                If New state value depends on previous state value? you can pass a fucntion to the setter function.
+
+                When dealing with objects or arrays, always make sure to spread state-Variable then call the setter function.
         */}
 
 
