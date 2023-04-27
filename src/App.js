@@ -3,11 +3,13 @@ import './App.css';
 import ClassCounter1 from './components/ClassCounter1';
 import Hookcounter1 from './components/Hookcounter1';
 import ClassMouse from './components/ClassMouse';
+import HookMouse from './components/HookMouse';
 
 function App() {
   return (
     <div className="App">
 
+      <HookMouse />
       
 
 {/*       *******  Here We are practicing to Run Effect only once. Which can be easily done in RCE via   ******** */}
