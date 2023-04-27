@@ -15,7 +15,7 @@ export class ClassCounter1 extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevState.count != this.state.count) {
+        if (prevState.count != this.state.count) {          // this was the solution for the below mentioned issue.
 
         console.log("Updating Document title!")                // Here the problem is, it executes every time we type in input box
         document.title =   `Clicked ${this.state.count} times`
