@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="App">
 
+    {/* ******* It is a replacement CompenentDidUnmount ******* */}
       <HookMouse />
-      
+
 
 {/*       *******  Here We are practicing to Run Effect only once. Which can be easily done in RCE via   ******** */}
         {/* <ClassMouse /> */}
