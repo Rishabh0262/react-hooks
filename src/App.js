@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
 
-
-    <Hookcounter1 />
+{/*      Here we've used the useEffect Hook, to repalce RCE's comp.DidMount, comp.didUpdate */}
+    {/* <Hookcounter1 /> */}
 
 
 {/*       A simple example for effects in class-component       */}
-      {/* <ClassCounter1 /> */}
+      <ClassCounter1 />
 
 
 
