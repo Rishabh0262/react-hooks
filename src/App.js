@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
 
+      
 
-        <ClassMouse />
+{/*       *******  Here We are practicing to Run Effect only once. Which can be easily done in RCE via   ******** */}
+        {/* <ClassMouse /> */}
 
 
 

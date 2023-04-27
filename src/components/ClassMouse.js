@@ -18,10 +18,13 @@ export class ClassMouse extends Component {
         window.addEventListener("mousemove", this.logMousePositon )
     }
 
-    componentDidUpdate() {
-        window.addEventListener("mousemove", this.logMousePositon )
 
-    }
+
+
+    //    ************ Ignore *************
+    // componentDidUpdate() {
+    //     window.addEventListener("mousemove", this.logMousePositon )
+    // }
 
   render() {
     
