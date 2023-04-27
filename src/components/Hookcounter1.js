@@ -19,9 +19,10 @@ function Hookcounter1() {
     useEffect(() => {
         console.log("useEffect - updating project title.")       // The same issue that has been faced in RCE(ClassCounter1.js). It re-renders for any change in <input> field
         document.title = `clicked ${count} times`
-    })
-
+    }, [count])                                                  // solution : for the above issuse. we added another parameter i.e, an Array listing those useState who we want for which it be executing. 
     
+
+
   return (
     <div>
         <input 
