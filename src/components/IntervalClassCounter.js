@@ -1,3 +1,5 @@
+// Objective : Create an interval Once and Destroy it once.
+
 import React, { Component } from 'react'
 
 export class IntervalClassCounter extends Component {
@@ -27,7 +29,7 @@ export class IntervalClassCounter extends Component {
   render() {
     return (
       <div>
-        <h2>{this.state.count}</h2>
+        <h2>Class count : {this.state.count}</h2>
       </div>
     )
   }
