@@ -11,7 +11,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 function App() {
   return (
     <div className="App">
-{/* {console log} */}
+{/* {console log} We decribed the use of DEPENDENCY ARRAY */}
     <IntervalHookCounter />
 
 {/*  ****** An example using RCE implementation  ******* */}
