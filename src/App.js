@@ -5,14 +5,27 @@ import Hookcounter1 from './components/Hookcounter1';
 import ClassMouse from './components/ClassMouse';
 import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
+import IntervalClassCounter from './components/IntervalClassCounter';
 
 function App() {
   return (
     <div className="App">
 
 
+{/*  ****** An example using RCE implementation  ******* */}
+      <IntervalClassCounter />
+
+
+
+
+
+
+
+
+
+
       {/*{console log} here we'll use the replacement for ComponentWillUnmount in RFCE */}
-        <MouseContainer />
+        {/* <MouseContainer /> */}
 
 
 
