@@ -11,12 +11,14 @@ function DataFetching() {
             .then(res => {
                 console.log(res)
                 // console.log(res.data[0].title)
-                setPosts(res.data)
+
+                setPosts(res.data)          // Error : Data keeps fetching more than once. Which it should not be happening.
             })
             .catch(err => {
                 console.log(err)
             })
-    })
+    }, [])        // Solution : Empty Dependency is passed as the parameter.
+                
     
 
   return (
