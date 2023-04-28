@@ -18,10 +18,15 @@ export class ClassMouse extends Component {
         window.addEventListener("mousemove", this.logMousePositon )
     }
 
+    /*  There are issues in <MouseContainer /> where 
+    
+    componentWillUnmount () {
+        window.removeEventListerner("mousemove" , this.logMousePosition)
+    }
 
+    */
 
-
-    //    ************ Ignore *************
+//    ************ Ignore, just tried to check *************
     // componentDidUpdate() {
     //     window.addEventListener("mousemove", this.logMousePositon )
     // }
