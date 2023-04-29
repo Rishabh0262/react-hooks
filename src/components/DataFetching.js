@@ -7,6 +7,12 @@ function DataFetching() {
     // const [posts, setPosts] = useState([])
     const [post, setPost] = useState([])
     const [id, setId] = useState(1)
+    const [idFromButtonClick, setIdFromButtonClick] = useState(1)
+
+    const handleClick = () => {
+        setIdFromButtonClick(id)
+    }
+
 
     useEffect(() => {
         axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -22,12 +28,13 @@ function DataFetching() {
             })
     // }, [])        // Solution : Empty Dependency is passed as the parameter.
 
-    }, [id])       // as in fetching data ID is dependent.
+    }, [idFromButtonClick])       // as in fetching data ID is dependent.
     
 
   return (
     <div>
         <input type='text' value={id} onChange={e => setId(e.target.value)} />
+        <button onClick={handleClick} >fetch data</button>
         {/* <ol>
             {posts.map(post => (
                 <li key={post.id}>{post.title}</li>
