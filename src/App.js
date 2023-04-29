@@ -13,7 +13,10 @@ function App() {
   return (
     <div className="App">
 
-{/*      {Console Log}       */}
+{/*      {Console Log}       
+
+      2nd Level : Getting Individual Post by passing Post ID.
+*/}
         <DataFetching />
 
 
