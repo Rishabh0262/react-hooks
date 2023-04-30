@@ -89,6 +89,35 @@ function App() {
 
 
 
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+************************************************  useContext Hook  ********************************************************
+ "Context provides a way to pass to pass data through the component tree without having to pass props manually at every level!"
+
+          Context is basically used for passing the 'props' in the heirarchy of the component.
+          Which makes the code dirty and complex.
+          Restricts the code to be Scalable.
+
+        <ComponentC>   // if we pass a {prop} in 'C' & we want to access it in 'F'. We've to mannually add on every Component declaration.
+              |
+              |->  <ComponentE>
+                        |
+                        |->  <Componentf>
+
+ 
+
+
+
+
+
+
         */}
 
 
