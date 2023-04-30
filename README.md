@@ -198,12 +198,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
                           |->  <Componentf>
 
 
-### STEPs
+### STEPs  for using Regular 'Context' in RFCE or RCE
     Step 1 : Create a context.
 
     Step 2 : Wrap the <Component /> within the <Context.Provider value={to-be-passed}>
 
     Step 3 : Consume the Context-value.
 
+##  STEPs for using 'useState-Hook'
+
+    Step 1 & 2 : same as before.
+
+    Step 3 : Consuming the Context
+
+             (a) : Import useContext-Hook.
+             (b) : Import ... all the context, Those are need to be used.
+             (c) : Just use ... `useContext()` & pass <context-name from (b)> .  Store the value in a Var. for individual-Context
 
  
