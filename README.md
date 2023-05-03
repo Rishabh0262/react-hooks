@@ -233,12 +233,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     
     useReducer >>> useState : means "useState" is build on "useReducer"
 
+###     useReducer(<reducer-funcName> , initialState).
 
-###     useReducer(reducer , initialState)
 ###               reducer(currentState , action )
 
+______________________________________________________________________________________________________________
+##               reduce in JS                      v/s                useReduce in React
+--------------------------------------------------- |  -------------------------------------------------------------------
+1.  array.reduce(reducer, initialValue)             |     useReduce(reducer, initialState)
+                                                    |
+2.  singleValue = reducer(accumulator, itemValue)   |     newState = reducer(currentState, action)
+                                                    |
+3.  reduce method returns a single value            |     useReducer returns a pair of values. 
+                                                    |         [newState, dispatch]
+                                                    |
+______________________________________________________________________________________________________________
 
 
+
+
+
+##  STEPs for using 'useReducer-Hook'
+
+    Step 1 : Defining initialState value.
+    Step 2 : Defining the "reducer-Function".         // the Function i.e, passed as 1st parameter to the useReducer-Hook.
+
+    Step 3 : 
 
 
 
