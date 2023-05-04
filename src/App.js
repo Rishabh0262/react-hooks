@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Counter1 from './components/Counter1';
 import Counter2 from './components/Counter2';
+import Counter3 from './components/Counter3';
 
 function App() {
   return (
@@ -10,9 +11,11 @@ function App() {
         {/* <Counter1 />  */}
         
 
-        {/* Complex state & action */}
-        <Counter2 />
+      {/* Complex state & action */}
+        {/* <Counter2 /> */}
 
+{/*   multiple useReducers   */}
+        <Counter3 />
 
 
     </div>
