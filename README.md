@@ -262,3 +262,19 @@ ________________________________________________________________________________
 
 
 
+
+
+
+
+
+
+
+## --------------------  useReducer Hook with useContext Hook  -----------------
+    "    "
+
+    useReducer - Local state management
+    Share state b/w component - Global state management
+
+    useReducer + useContext
+
+###    Further description in App.js
