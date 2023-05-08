@@ -7,26 +7,27 @@ import Counter3 from './components/Counter3';
 import ComponentA from './components/ComponentA'
 import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
+import DataFetching1 from './components/DataFetching1';
 
 
 export const CountContext = React.createContext() 
 
 
-const initialState = 0
+// const initialState = 0
 
-    const reducer = (state , action) => {
-        switch (action) {
-            case 'increment' :
-                return state + 1
-            case 'decrement' :
-                return state - 1
-            case 'reset' :
-                return initialState
-            default :
-                return state
-        }
+//     const reducer = (state , action) => {
+//         switch (action) {
+//             case 'increment' :
+//                 return state + 1
+//             case 'decrement' :
+//                 return state - 1
+//             case 'reset' :
+//                 return initialState
+//             default :
+//                 return state
+//         }
 
-    }
+//     }
 
 
 
@@ -34,20 +35,52 @@ const initialState = 0
 
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
-
 
   return (
-    <CountContext.Provider 
-      value={{countState : count, countDispatch : dispatch}} 
-    >
-        <div className="App">
-          count : {count}
-            <ComponentA />
-            <ComponentB />
-            <ComponentC />
-        </div>
-    </CountContext.Provider>
+    
+    <div className="App">
+
+    {/*   Fetching data with useReducer part-1.
+              Example using the useSate-Hook first.
+    */}
+
+      <DataFetching1 />
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const [count, dispatch] = useReducer(reducer, initialState)
+
+
+  // return (
+  //   <CountContext.Provider 
+  //     value={{countState : count, countDispatch : dispatch}} 
+  //   >
+  //       <div className="App">
+  //         count : {count}
+  //           <ComponentA />
+  //           <ComponentB />
+  //           <ComponentC />
+  //       </div>
+  //   </CountContext.Provider>
 
 /*    useReducer with useContext
 
@@ -103,3 +136,4 @@ function App() {
 }
 
 export default App;
+

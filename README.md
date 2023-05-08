@@ -278,3 +278,26 @@ ________________________________________________________________________________
     useReducer + useContext
 
 ###    Further description in App.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## --------------------  useReducer -> using useState & useEffect-Hook to fetch Data  -----------------
+
+    "  in DataFetching1.js : we have used useState-Hook, 
+      useState used 3 states : loading/error/post. 
+      useEffect : for fetching Data from API. (Just for single fetch, we'll empty the Dependancy array)
+      
+    "
