@@ -296,8 +296,21 @@ ________________________________________________________________________________
 
 ## --------------------  useReducer -> using useState & useEffect-Hook to fetch Data  -----------------
 
+###                useState
     "  in DataFetching1.js : we have used useState-Hook, 
       useState used 3 states : loading/error/post. 
       useEffect : for fetching Data from API. (Just for single fetch, we'll empty the Dependancy array)
       
+    "
+
+
+
+
+###                useReducer
+    "  in DataFetching2.js : we have differeces like 
+        *   Instead of useState, we've used useReducer.
+        *   We've grouped related 'state' together.        @ #1
+        *   At the same time, our 'state-transition' have groulped together.       @ case return statement in #2.
+
+
     "

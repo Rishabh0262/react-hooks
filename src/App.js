@@ -8,6 +8,7 @@ import ComponentA from './components/ComponentA'
 import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
 import DataFetching1 from './components/DataFetching1';
+import DataFetching2 from './components/DataFetching2';
 
 
 export const CountContext = React.createContext() 
@@ -40,11 +41,24 @@ function App() {
     
     <div className="App">
 
+    {/*   Fetching data with useReducer part-2.
+            Example using the useReducer-Hook, this time.
+    */}
+
+      <DataFetching2 />
+
+
+
+
+
     {/*   Fetching data with useReducer part-1.
               Example using the useSate-Hook first.
     */}
 
-      <DataFetching1 />
+      {/* <DataFetching1 /> */}
+
+
+
     </div>
    
 
