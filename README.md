@@ -262,3 +262,37 @@ ________________________________________________________________________________
 
 
 
+
+
+###                 useState      v/s          useReducer
+
+_____________________________________________________________________________________________________________________________________________________________
+##  Scenario                |              useState                                    v/s                useReducer
+--------------------------  |  ------------------------------------------------------   |  ------------------------------------------------------------------
+1.  Types of state          |    primitive type (no. / str/ boolean)                    |          Object or Array
+--------------------------  |  ------------------------------------------------------   |  ------------------------------------------------------------------
+2.  Number of state         |    1 or 2        *Don't use it*                           |            5 or 10 seperate setState calls                           
+       transition           |                                                           |     [because it makes state-transition predictable]
+                            |      "If there is a lot of setState/setSession calls      |  We would be updating several-states But all these will be in 1 
+                            |                                                           |    place i.e, reducer-function.
+                            
+--------------------------  | -------------------------------------------------------   |  ------------------------------------------------------------------
+3.  Related State           |  No, {in example, rh4-useReducer4-fetching-data we had    |    YES , {But actually useReducer is better as State-transitions 
+     transition             |  3 states. It seems good to use useState} if everything   |  are all realated or tied to specific action (all 3 stateVar  
+                            |  were to be managed at different places. It gets Harder   |   updated together on Data-fetched successfully or gets ERROR)}
+
+--------------------------  | -------------------------------------------------------   |  ------------------------------------------------------------------
+4.  Bussiness Logic         |       No bussiness logic                                  |  Complex Bussiness Logic, { if state-Transition needs old-value to
+                            |                                                           |   new-value requires some biz. Logic & complex Data-xformation &
+                            |                                                           |      manipulation}
+
+--------------------------  | -------------------------------------------------------   |  ------------------------------------------------------------------
+5. Local v/s Global State   |   Local , if we want a local component state              |    Global ,  {If we want to maintain global state That can be 
+                            |     {Scenaio explained in these braces on useReducer}     |         altered by the Components deep in the Comp-Tree.}
+                            |   We will have to pass multiple update Func. 1 for each   |   it is the better option.
+                            |   state.                                                  |   Ofcourse, we'll use useContext but including useReducer is
+                            |                                                           |   advantagious.
+                            |                                                           |     We simply have to pass 1 "Dispatch-Method" down the comp-tree.
+                            |                                                           |   this 1 "dispatch-Method" can update several state-var based on action type.
+_____________________________________________________________________________________________________________________________________________________________
+
