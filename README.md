@@ -322,5 +322,8 @@ ________________________________________________________________________________
     It prevents re-rendering of the unrelated components, It can provide drastic performance optimization, 
     when we are having 20, 30, 50 or more component then re-rendering can cause performance issues.
 
+## why we should NOT use useCallback-Hook all the time?!
+        https://kentcdodds.com/blog/usememo-and-usecallback
+
 
 
