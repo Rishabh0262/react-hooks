@@ -9,9 +9,8 @@ function Button({handleClick, children}) {
         <button onClick={handleClick}>
             {children}
         </button>
-        
     </div>
   )
 }
 
-export default Button
+export default React.memo(Button)

@@ -319,4 +319,8 @@ ________________________________________________________________________________
     "It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders." 
 
 
+    It prevents re-rendering of the unrelated components, It can provide drastic performance optimization, 
+    when we are having 20, 30, 50 or more component then re-rendering can cause performance issues.
+
+
 
