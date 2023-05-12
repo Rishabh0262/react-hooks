@@ -312,10 +312,11 @@ ________________________________________________________________________________
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # ************************************************  useCallback Hook  ********************************************************
-    "
-        
-    "
+### what
+    "useCallback is a Hook that returns a memoized version of callback function that only changes if 1 of the dependencies has changed."
 
+### why
+    "It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders." 
 
 
 
