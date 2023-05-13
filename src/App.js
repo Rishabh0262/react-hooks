@@ -8,7 +8,7 @@ function App() {
       
 
       {/*        useMemo-Hook            */}
-         <Counter ></Counter> 
+         <Counter />
 
 
     </div>
