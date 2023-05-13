@@ -312,10 +312,36 @@ ________________________________________________________________________________
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # ************************************************  useCallback Hook  ********************************************************
-    "
-        
-    "
+### what
+    "useCallback is a Hook that returns a memoized version of callback function that only changes if 1 of the dependencies has changed."
+
+### why
+    "It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders." 
 
 
+    It prevents re-rendering of the unrelated components, It can provide drastic performance optimization, 
+    when we are having 20, 30, 50 or more component then re-rendering can cause performance issues.
+
+## why we should NOT use useCallback-Hook all the time?!
+        https://kentcdodds.com/blog/usememo-and-usecallback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# ************************************************  useMemo Hook  ********************************************************
 
 
