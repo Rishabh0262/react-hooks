@@ -344,4 +344,8 @@ ________________________________________________________________________________
 
 # ************************************************  useMemo Hook  ********************************************************
 
+    " useMemo is a Hook that will only recompute the cached value when 1 of the dependencies is changed.
+    This optimization heads to avoid expensive calculation on every render.
+    "
 
+    Working is similar to how useCallback works.
