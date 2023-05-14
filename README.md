@@ -381,4 +381,7 @@ ________________________________________________________________________________
 
 # ************************************************  useRef Hook  ********************************************************
 
-    
+    "
+        This hook makes it possible to 'Access DOM nodes' directly within functional Component
+        e.g. : Focusing the text-input 
+    "
