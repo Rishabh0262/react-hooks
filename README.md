@@ -385,3 +385,12 @@ ________________________________________________________________________________
         This hook makes it possible to 'Access DOM nodes' directly within functional Component
         e.g. : Focusing the text-input 
     "
+### STEPs
+
+#1     import 'useRef' from react
+#2     create a 'useRef' variable ... assign it to null.
+#3      using the 'useRef-variable' at the appropiate position.
+(Current is a property comes from React,  The ref's current property to the corresponding DOM node)
+
+#4   implementing the DOM manipulation. In 'useEffect'.
+
