@@ -394,3 +394,20 @@ ________________________________________________________________________________
 
 #4   implementing the DOM manipulation. In 'useEffect'.
 
+
+
+
+## 2nd usage of useRef-Hook
+[HookTimer.js]
+
+It can be used to create a Generic container which can hold a mutable value similar to instance properties on a RCE(class Comp.)
+
+
+
+Fact : Although useRef can hold the Reference to a DOM node using 'ref' attribute.
+         It can also be used to store any mutable value & the value persist through the re-renders. While also not causing any additional renders when its value changes.
+
+    This generic containers does not cause re-renders when data it stores changes.
+
+    At the same time, it also remembers the stored data even after the other state var. caused a re-render of this component.
+
