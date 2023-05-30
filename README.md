@@ -381,4 +381,62 @@ ________________________________________________________________________________
 
 # ************************************************  useRef Hook  ********************************************************
 
-    
+    "
+        This hook makes it possible to 'Access DOM nodes' directly within functional Component
+        e.g. : Focusing the text-input 
+    "
+### STEPs
+
+#1     import 'useRef' from react
+#2     create a 'useRef' variable ... assign it to null.
+#3      using the 'useRef-variable' at the appropiate position.
+(Current is a property comes from React,  The ref's current property to the corresponding DOM node)
+
+#4   implementing the DOM manipulation. In 'useEffect'.
+
+
+
+
+## 2nd usage of useRef-Hook
+[HookTimer.js]
+
+It can be used to create a Generic container which can hold a mutable value similar to instance properties on a RCE(class Comp.)
+
+
+
+Fact : Although useRef can hold the Reference to a DOM node using 'ref' attribute.
+         It can also be used to store any mutable value & the value persist through the re-renders. While also not causing any additional renders when its value changes.
+
+    This generic containers does not cause re-renders when data it stores changes.
+
+    At the same time, it also remembers the stored data even after the other state var. caused a re-render of this component.
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# ************************************************  Custom Hooks ********************************************************
+
+    "
+        A custom hook is basically a JS function whose name starts with 'use'.
+        a custom hook can also call another hook if required.
+    "
+
+### why
+
+    Share Logic - Alternative to HOCs and Render Props.
+
+### How to create custom Hooks?
+
+
+
+
