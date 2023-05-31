@@ -440,3 +440,16 @@ Fact : Although useRef can hold the Reference to a DOM node using 'ref' attribut
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+## Hooks provide a great deal of flexibility.

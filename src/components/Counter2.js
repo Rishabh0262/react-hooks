@@ -1,19 +1,25 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+import useCounter from '../hooks/useCounter'
 
 function Counter2() {
-    const [count, setCount] = useState(0)
 
-    const increment = () => {
-        setCount(prevCount => prevCount + 1)
-    }
+    const [count, increment, decrement, reset] = useCounter(10)
 
-    const decrement = () => {
-        setCount(prevCount => prevCount - 1)
-    }
 
-    const reset = () => {
-        setCount(0)
-    }
+
+    // const [count, setCount] = useState(0)
+
+    // const increment = () => {
+    //     setCount(prevCount => prevCount + 1)
+    // }
+
+    // const decrement = () => {
+    //     setCount(prevCount => prevCount - 1)
+    // }
+
+    // const reset = () => {
+    //     setCount(0)
+    // }
   return (
     <div>
         <h2>Count - {count} </h2>
