@@ -4,6 +4,8 @@ import DocTitle1 from './components/DocTitle1';
 import DocTitle2 from './components/DocTitle2';
 import Counter1 from './components/Counter1';
 import Counter2 from './components/Counter2';
+import UserForm from './components/UserForm';
+import UseForm from './components/UseForm';
 
 function App() {
   return (
@@ -34,10 +36,21 @@ function App() {
 {/*     Here we are trying to make an another attempt to use Custom-Hook
 
 */}
-      <Counter1 />
-      <Counter2 />
+      {/* <Counter1 />
+      <Counter2 /> */}
 
 
+
+
+
+
+
+
+
+
+{/* ***** 3rd example of Custom-Hooks ******* */}
+
+      <UserForm />
 
     </div>
   );
