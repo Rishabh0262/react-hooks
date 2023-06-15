@@ -5,7 +5,8 @@ import DocTitle2 from './components/DocTitle2';
 import Counter1 from './components/Counter1';
 import Counter2 from './components/Counter2';
 import UserForm from './components/UserForm';
-import UseForm from './components/UseForm';
+import UserForm1 from './components/UserForm1';
+// import UseForm from './components/UseForm';
 
 function App() {
   return (
@@ -48,9 +49,13 @@ function App() {
 
 
 
-{/* ***** 3rd example of Custom-Hooks ******* */}
+{/* ***** 3rd example of Custom-Hooks ******* 
+      * Custom Hook has to encapsulate "controlled component behaviour"  for an input element.
+      That is, binding the value and OnChange attribute.
+*/}
 
-      <UserForm />
+      {/* <UserForm /> */}
+      <UserForm1 />
 
     </div>
   );
