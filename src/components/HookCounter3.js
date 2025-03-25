@@ -45,3 +45,15 @@ function HookCounter3() {
 }
 
 export default HookCounter3;
+
+/*
+[commit 1]
+  we used js-Object as stateVariable in useStateHook.
+which has some 'merge & update' issues.
+which can be resovled manually. Using '...' -> 'spread operator' while useState initialization.
+
+[commit 2]
+we needed to use the '...' : SPREAD OPERATOR, followed by the objectName.
+Which brings all the data from the objects. then change the one or more attribute *Manually*.
+
+*/
